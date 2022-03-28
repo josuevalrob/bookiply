@@ -1,16 +1,18 @@
 import React from "react";
-import logo from "./logo.svg";
 import Header from "../Header";
 import Paper from "@mui/material/Paper";
 import Reviews from "../Reviews";
-import styles from './styles'
+import styles from './styles';
 
 function App() {
+
   return (
     <div style={styles.container}>
-      <Header id='ID:091021' title='La Casa de las Flores' />
+      <div style={styles.background}>
+        <Header id='ID:091021' title='La Casa de las Flores' />
+      </div>
       <Paper elevation={3} style={styles.paper}>
-        <Reviews title='17 Reviews' />
+        <Reviews />
       </Paper>
     </div>
   );
